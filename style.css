@@ -1,0 +1,136 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin:0;
+    overflow: hidden;
+}
+
+#particles-js{ 
+    position:absolute; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #000000; 
+    background-image: url(""); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 50% 50%; 
+} 
+
+.container {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px 10px 125px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.d_flex {
+    display: flex;
+}
+
+.line-between {
+    display: flex;
+    max-width:85%;
+}
+
+li {
+    list-style: none;
+    margin: auto;
+    min-width: -webkit-fill-available;
+}
+
+.justify_space_between {
+    justify-content: space-between;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 10px;
+}
+
+.input-group label {
+    margin-right: auto;
+    margin-bottom: 5px;
+    font-size: 10px;
+    font-weight: bolder;
+    color: hsl(0, 1%, 44%);
+    text-transform: uppercase;
+}
+
+.input-group input {
+    width: 80px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 12px 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.result {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+.download-button {
+    background-color: hsl(0deg 0% 61.56%);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size:xxx-large;
+    cursor: pointer;
+}
+
+.download-button:hover {
+    background-color: black;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        width:50%;
+        padding:40px;
+    }
+    .d_flex {
+        display:block;
+    }
+    .line-between {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container{
+        width:40%;
+        padding:20px;
+    }
+    .result {
+        font-size:30px;
+    }
+    li {
+        display:none;
+    }
+    .line-between {
+        max-width:100%;
+        width: 100%;
+        justify-content: center;
+    }
+}

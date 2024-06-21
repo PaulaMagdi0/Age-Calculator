@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Age calculator</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div id="particles-js"></div>
+  <div class="container">
+    <div class="d_flex">
+      <div class="input-group">
+        <label for="day">D a y</label>
+        <input type="number" id="day" placeholder="DD">
+      </div>
+      <div class="input-group">
+        <label for="month">M o n t h</label>
+        <input type="number" id="month" placeholder="MM">
+      </div>
+      <div class="input-group">
+        <label for="year">Y e a r</label>
+        <input type="number" id="year" placeholder="YYYY">
+      </div>
+    </div>
+    <div class="line-between">
+      <li><hr></li><button class="download-button" id="downloadButton">&#8651</button>
+    </div>
+    
+    <div class="result" id="result"></div>
+
+    
+  </div>
+
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> 
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+</html>
